@@ -12,7 +12,7 @@ router.get('/', function(req, res) {
       var title = $(element).text();
       var link = "https://www.nytimes.com" + $(element).children().attr("href");
       results.push({
-        title: title,
+        titles: title,
         link: link
       });
     });
@@ -22,8 +22,7 @@ router.get('/', function(req, res) {
     }
     // res.send(results);
     res.render('scrape', {
-      link: results[0].link,
-      titles: results[0].title
+      results
     
     });
   });

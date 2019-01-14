@@ -1,6 +1,11 @@
 
-<p>{{titles}}</p>
-<p>{{link}}</p>
+
 <div>
-      {{#each results}} {{#each title}} {{link}} {{/each}} {{/each}}
-    </div>
+      <ul class="people_list">
+      {{#each results}}
+        <li>{{this.titles}}</li>
+        <li><a href=
+        `{{this.link}}`/a></li>
+      {{/each}}
+    </ul>
+</div>
