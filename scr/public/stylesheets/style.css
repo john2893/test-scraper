@@ -3,12 +3,29 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
+
 
 .results {
   color: green;
   font-size: 20px;
+  font-weight: bold;
+}
+.articles {
+  background-color: rgb(48, 164, 236);
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin:20px;
+  border-radius: 2%;
+  text-align: center;
+  color:black
+}
+li {
+  list-style-type: none;
+}
+.titles {
+  background-color: white;
+  color: black;
+  border:1px solid white;
+  box-sizing: border-box;
   font-weight: bold;
 }

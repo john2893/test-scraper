@@ -7,11 +7,11 @@
 <div>
       <ul class="results">
       {{#each results}}
-        <ul>
-          <li>{{this.titles}}</li>
+        <div class="articles">
           <li><a href="{{this.link}}">{{this.link}}</a></li>
-        </ul>
-        
+          <li class="titles">{{this.titles}}</li>
+          
+        </div>
       {{/each}}
     </ul>
 </div>
