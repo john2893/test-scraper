@@ -1,12 +1,16 @@
 
-$("#btn").click(function(){
-    alert ("hello");
-});
 
-$("#save").click(function(){
-    alert ("Save");
-});
 
-$("#note").click(function(){
-    alert ("Note");
+$(document).ready(function(){
+    $("#btn").click(function(){
+        alert ("hello");
+    });
+    
+    $("#save").click(function(){
+        alert ("Save");
+    });
+    
+    $("#note").click(function(){
+        alert ("Note");
+    });
 });
