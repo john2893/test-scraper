@@ -8,7 +8,9 @@
       <ul class="results">
       {{#each results}}
         <div class="articles">
-          <li><a href="{{this.link}}">{{this.link}}</a></li>
+          <button id="save"> Save</button>
+          <button id="note"> Note</button>
+          <li class="link"><a href="{{this.link}}">{{this.link}}</a></li>
           <li class="titles">{{this.titles}}</li>
           
         </div>

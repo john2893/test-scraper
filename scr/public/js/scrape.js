@@ -1,7 +1,12 @@
 
-$(document).ready(function(){
-    $("#btn").click(function(){
-        alert ("hello");
-        console.log ("hi");
-    })
+$("#btn").click(function(){
+    alert ("hello");
+});
+
+$("#save").click(function(){
+    alert ("Save");
+});
+
+$("#note").click(function(){
+    alert ("Note");
 });
