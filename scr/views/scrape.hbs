@@ -1,11 +1,17 @@
 
 
 <div>
-      <ul class="people_list">
+  <button id="btn">Scrape Now</button>
+</div>
+
+<div>
+      <ul class="results">
       {{#each results}}
-        <li>{{this.titles}}</li>
-        <li><a href=
-        `{{this.link}}`/a></li>
+        <ul>
+          <li>{{this.titles}}</li>
+          <li><a href="{{this.link}}">{{this.link}}</a></li>
+        </ul>
+        
       {{/each}}
     </ul>
 </div>

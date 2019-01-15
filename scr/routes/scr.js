@@ -10,21 +10,19 @@ router.get('/', function(req, res) {
     var results = [];
     $(".css-141drxa").each(function(i, element) {
       var title = $(element).text();
+      console.log (title)
       var link = "https://www.nytimes.com" + $(element).children().attr("href");
       results.push({
         titles: title,
         link: link
       });
     });
-    console.log(results.length);
+    console.log(results.titles);
     for (var i=0; i<results.length;i++){
-      console.log("Title: " + results[i].title + "\n\r" + "Links: " + results[i].link)
+      console.log("Title: " + results[i].titles + "\n\r" + "Links: " + results[i].link)
     }
     // res.send(results);
-    res.render('scrape', {
-      results
-    
-    });
+    res.render('scrape', {results});
   });
   
 });
