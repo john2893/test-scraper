@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
     $("#btn").click(function(){
-        alert ("hello");
+        alert ("Scrape Now");
     });
     
     $("#save").click(function(){
@@ -11,6 +11,8 @@ $(document).ready(function(){
     });
     
     $("#note").click(function(){
-        alert ("Note");
+        
+        
     });
+    
 });
